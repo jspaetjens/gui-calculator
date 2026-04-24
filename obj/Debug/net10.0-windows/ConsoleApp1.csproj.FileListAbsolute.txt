@@ -1,0 +1,14 @@
+C:\Users\spit\source\repos\dotnet\firstcode_dotnet\ConsoleApp1\bin\Debug\net10.0-windows\ConsoleApp1.exe
+C:\Users\spit\source\repos\dotnet\firstcode_dotnet\ConsoleApp1\bin\Debug\net10.0-windows\ConsoleApp1.deps.json
+C:\Users\spit\source\repos\dotnet\firstcode_dotnet\ConsoleApp1\bin\Debug\net10.0-windows\ConsoleApp1.runtimeconfig.json
+C:\Users\spit\source\repos\dotnet\firstcode_dotnet\ConsoleApp1\bin\Debug\net10.0-windows\ConsoleApp1.dll
+C:\Users\spit\source\repos\dotnet\firstcode_dotnet\ConsoleApp1\bin\Debug\net10.0-windows\ConsoleApp1.pdb
+C:\Users\spit\source\repos\dotnet\firstcode_dotnet\ConsoleApp1\obj\Debug\net10.0-windows\ConsoleApp1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\spit\source\repos\dotnet\firstcode_dotnet\ConsoleApp1\obj\Debug\net10.0-windows\ConsoleApp1.AssemblyInfoInputs.cache
+C:\Users\spit\source\repos\dotnet\firstcode_dotnet\ConsoleApp1\obj\Debug\net10.0-windows\ConsoleApp1.AssemblyInfo.cs
+C:\Users\spit\source\repos\dotnet\firstcode_dotnet\ConsoleApp1\obj\Debug\net10.0-windows\ConsoleApp1.csproj.CoreCompileInputs.cache
+C:\Users\spit\source\repos\dotnet\firstcode_dotnet\ConsoleApp1\obj\Debug\net10.0-windows\ConsoleApp1.dll
+C:\Users\spit\source\repos\dotnet\firstcode_dotnet\ConsoleApp1\obj\Debug\net10.0-windows\refint\ConsoleApp1.dll
+C:\Users\spit\source\repos\dotnet\firstcode_dotnet\ConsoleApp1\obj\Debug\net10.0-windows\ConsoleApp1.pdb
+C:\Users\spit\source\repos\dotnet\firstcode_dotnet\ConsoleApp1\obj\Debug\net10.0-windows\ConsoleApp1.genruntimeconfig.cache
+C:\Users\spit\source\repos\dotnet\firstcode_dotnet\ConsoleApp1\obj\Debug\net10.0-windows\ref\ConsoleApp1.dll

@@ -1,0 +1,14 @@
+c:\Users\spit\source\repos\dotnet\firstcode_dotnet\ConsoleApp1\bin\Release\net10.0-windows\ConsoleApp1.exe
+c:\Users\spit\source\repos\dotnet\firstcode_dotnet\ConsoleApp1\bin\Release\net10.0-windows\ConsoleApp1.deps.json
+c:\Users\spit\source\repos\dotnet\firstcode_dotnet\ConsoleApp1\bin\Release\net10.0-windows\ConsoleApp1.runtimeconfig.json
+c:\Users\spit\source\repos\dotnet\firstcode_dotnet\ConsoleApp1\bin\Release\net10.0-windows\ConsoleApp1.dll
+c:\Users\spit\source\repos\dotnet\firstcode_dotnet\ConsoleApp1\bin\Release\net10.0-windows\ConsoleApp1.pdb
+c:\Users\spit\source\repos\dotnet\firstcode_dotnet\ConsoleApp1\obj\Release\net10.0-windows\ConsoleApp1.GeneratedMSBuildEditorConfig.editorconfig
+c:\Users\spit\source\repos\dotnet\firstcode_dotnet\ConsoleApp1\obj\Release\net10.0-windows\ConsoleApp1.AssemblyInfoInputs.cache
+c:\Users\spit\source\repos\dotnet\firstcode_dotnet\ConsoleApp1\obj\Release\net10.0-windows\ConsoleApp1.AssemblyInfo.cs
+c:\Users\spit\source\repos\dotnet\firstcode_dotnet\ConsoleApp1\obj\Release\net10.0-windows\ConsoleApp1.csproj.CoreCompileInputs.cache
+c:\Users\spit\source\repos\dotnet\firstcode_dotnet\ConsoleApp1\obj\Release\net10.0-windows\ConsoleApp1.dll
+c:\Users\spit\source\repos\dotnet\firstcode_dotnet\ConsoleApp1\obj\Release\net10.0-windows\refint\ConsoleApp1.dll
+c:\Users\spit\source\repos\dotnet\firstcode_dotnet\ConsoleApp1\obj\Release\net10.0-windows\ConsoleApp1.pdb
+c:\Users\spit\source\repos\dotnet\firstcode_dotnet\ConsoleApp1\obj\Release\net10.0-windows\ConsoleApp1.genruntimeconfig.cache
+c:\Users\spit\source\repos\dotnet\firstcode_dotnet\ConsoleApp1\obj\Release\net10.0-windows\ref\ConsoleApp1.dll

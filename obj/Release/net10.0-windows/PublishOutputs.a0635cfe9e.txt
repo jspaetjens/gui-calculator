@@ -1,0 +1,5 @@
+c:\Users\spit\source\repos\dotnet\firstcode_dotnet\ConsoleApp1\bin\Release\net10.0-windows\publish\ConsoleApp1.exe
+c:\Users\spit\source\repos\dotnet\firstcode_dotnet\ConsoleApp1\bin\Release\net10.0-windows\publish\ConsoleApp1.dll
+c:\Users\spit\source\repos\dotnet\firstcode_dotnet\ConsoleApp1\bin\Release\net10.0-windows\publish\ConsoleApp1.deps.json
+c:\Users\spit\source\repos\dotnet\firstcode_dotnet\ConsoleApp1\bin\Release\net10.0-windows\publish\ConsoleApp1.runtimeconfig.json
+c:\Users\spit\source\repos\dotnet\firstcode_dotnet\ConsoleApp1\bin\Release\net10.0-windows\publish\ConsoleApp1.pdb

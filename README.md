@@ -45,12 +45,10 @@ The calculator window will open, allowing you to perform basic arithmetic operat
 ## Future Changes
 Keep a record of changes and updates here.
 
-### Version 1.1.0 (Advanced Calculator)
-- Upgraded to advanced calculator with expression evaluation
-- Added buttons for trigonometric functions, logarithms, square root, power
-- Added support for constants pi and e
-- Changed to expression-based input instead of sequential operations
-- Removed graphing feature due to assembly issues (to be added later)
+### Version 1.2.0 (Dark Theme)
+- Applied modern dark theme with dark backgrounds and light text
+- Updated fonts to Segoe UI for a cleaner look
+- Added flat button style with hover effects
 
 ### Version 1.0.0 (Initial Release)
 - Created basic GUI calculator with Windows Forms

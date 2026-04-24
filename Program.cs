@@ -19,15 +19,20 @@ namespace CalculatorApp
             this.Text = "Advanced Calculator";
             this.Size = new System.Drawing.Size(500, 500);
             this.StartPosition = FormStartPosition.CenterScreen;
+            this.BackColor = System.Drawing.Color.FromArgb(30, 30, 30);
+            this.ForeColor = System.Drawing.Color.White;
 
             // Display TextBox
             display = new TextBox();
             display.Location = new System.Drawing.Point(10, 10);
             display.Size = new System.Drawing.Size(460, 40);
-            display.Font = new System.Drawing.Font("Arial", 16);
+            display.Font = new System.Drawing.Font("Segoe UI", 16, System.Drawing.FontStyle.Bold);
             display.TextAlign = HorizontalAlignment.Left;
             display.ReadOnly = true;
             display.Text = "";
+            display.BackColor = System.Drawing.Color.FromArgb(50, 50, 50);
+            display.ForeColor = System.Drawing.Color.White;
+            display.BorderStyle = BorderStyle.FixedSingle;
             this.Controls.Add(display);
 
             // Buttons
@@ -48,7 +53,13 @@ namespace CalculatorApp
                 btn.Text = btnText;
                 btn.Size = new System.Drawing.Size(buttonWidth, buttonHeight);
                 btn.Location = new System.Drawing.Point(x, y);
-                btn.Font = new System.Drawing.Font("Arial", 12);
+                btn.Font = new System.Drawing.Font("Segoe UI", 10, System.Drawing.FontStyle.Bold);
+                btn.BackColor = System.Drawing.Color.FromArgb(60, 60, 60);
+                btn.ForeColor = System.Drawing.Color.White;
+                btn.FlatStyle = FlatStyle.Flat;
+                btn.FlatAppearance.BorderColor = System.Drawing.Color.Gray;
+                btn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(80, 80, 80);
+                btn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(100, 100, 100);
                 btn.Click += Button_Click;
                 this.Controls.Add(btn);
 

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Data;
 using System.Windows.Forms;
 
 namespace CalculatorApp
@@ -6,9 +7,7 @@ namespace CalculatorApp
     public partial class CalculatorForm : Form
     {
         private TextBox? display;
-        private double currentValue = 0;
-        private string currentOperator = "";
-        private bool isNewValue = true;
+        private string expression = "";
 
         public CalculatorForm()
         {
@@ -17,39 +16,47 @@ namespace CalculatorApp
 
         private void InitializeComponent()
         {
-            this.Text = "Calculator";
-            this.Size = new System.Drawing.Size(300, 400);
+            this.Text = "Advanced Calculator";
+            this.Size = new System.Drawing.Size(500, 500);
             this.StartPosition = FormStartPosition.CenterScreen;
 
             // Display TextBox
             display = new TextBox();
             display.Location = new System.Drawing.Point(10, 10);
-            display.Size = new System.Drawing.Size(260, 40);
+            display.Size = new System.Drawing.Size(460, 40);
             display.Font = new System.Drawing.Font("Arial", 16);
-            display.TextAlign = HorizontalAlignment.Right;
+            display.TextAlign = HorizontalAlignment.Left;
             display.ReadOnly = true;
-            display.Text = "0";
+            display.Text = "";
             this.Controls.Add(display);
 
             // Buttons
-            string[] buttons = { "7", "8", "9", "/", "4", "5", "6", "*", "1", "2", "3", "-", "0", "C", "=", "+" };
+            string[] buttons = {
+                "7", "8", "9", "/", "sin", "cos",
+                "4", "5", "6", "*", "tan", "log",
+                "1", "2", "3", "-", "ln", "sqrt",
+                "0", ".", "=", "+", "^", "(",
+                "C", "x", "pi", ")", "e"
+            };
 
-            int x = 10, y = 60;
+            int x = 10, y = 70;
+            int buttonWidth = 70;
+            int buttonHeight = 50;
             foreach (string btnText in buttons)
             {
                 Button btn = new Button();
                 btn.Text = btnText;
-                btn.Size = new System.Drawing.Size(60, 60);
+                btn.Size = new System.Drawing.Size(buttonWidth, buttonHeight);
                 btn.Location = new System.Drawing.Point(x, y);
-                btn.Font = new System.Drawing.Font("Arial", 14);
+                btn.Font = new System.Drawing.Font("Arial", 12);
                 btn.Click += Button_Click;
                 this.Controls.Add(btn);
 
-                x += 65;
-                if (x > 200)
+                x += buttonWidth + 10;
+                if (x > 450)
                 {
                     x = 10;
-                    y += 65;
+                    y += buttonHeight + 10;
                 }
             }
         }
@@ -59,61 +66,29 @@ namespace CalculatorApp
             Button btn = (Button)(sender ?? throw new InvalidOperationException("Sender is null"));
             string buttonText = btn.Text;
 
-            if (char.IsDigit(buttonText[0]) || buttonText == ".")
+            if (buttonText == "C")
             {
-                if (isNewValue)
-                {
-                    display!.Text = buttonText;
-                    isNewValue = false;
-                }
-                else
-                {
-                    display!.Text += buttonText;
-                }
-            }
-            else if (buttonText == "C")
-            {
-                display!.Text = "0";
-                currentValue = 0;
-                currentOperator = "";
-                isNewValue = true;
+                expression = "";
+                display!.Text = expression;
             }
             else if (buttonText == "=")
             {
-                if (!string.IsNullOrEmpty(currentOperator))
+                try
                 {
-                    double secondValue = double.Parse(display!.Text);
-                    double result = Calculate(currentValue, secondValue, currentOperator);
+                    var result = new DataTable().Compute(expression, null);
                     display!.Text = result.ToString();
-                    currentValue = result;
-                    currentOperator = "";
-                    isNewValue = true;
+                    expression = result.ToString();
+                }
+                catch
+                {
+                    display!.Text = "Error";
+                    expression = "";
                 }
             }
-            else // operators
+            else
             {
-                if (!isNewValue)
-                {
-                    currentValue = double.Parse(display!.Text);
-                    currentOperator = buttonText;
-                    isNewValue = true;
-                }
-                else
-                {
-                    currentOperator = buttonText;
-                }
-            }
-        }
-
-        private double Calculate(double first, double second, string op)
-        {
-            switch (op)
-            {
-                case "+": return first + second;
-                case "-": return first - second;
-                case "*": return first * second;
-                case "/": return second != 0 ? first / second : 0;
-                default: return 0;
+                expression += buttonText;
+                display!.Text = expression;
             }
         }
     }

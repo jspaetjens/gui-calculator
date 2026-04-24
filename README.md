@@ -33,8 +33,10 @@ The calculator window will open, allowing you to perform basic arithmetic operat
 
 ## Features
 - Basic arithmetic operations: addition, subtraction, multiplication, division
+- Advanced functions: sin, cos, tan, log, ln, sqrt, power (^)
+- Support for constants: pi, e
+- Expression-based input with parentheses
 - Clear function (C button)
-- Simple GUI with buttons for numbers and operators
 
 ## Project Structure
 - `Program.cs`: Main application code with the calculator form and logic
@@ -42,6 +44,13 @@ The calculator window will open, allowing you to perform basic arithmetic operat
 
 ## Future Changes
 Keep a record of changes and updates here.
+
+### Version 1.1.0 (Advanced Calculator)
+- Upgraded to advanced calculator with expression evaluation
+- Added buttons for trigonometric functions, logarithms, square root, power
+- Added support for constants pi and e
+- Changed to expression-based input instead of sequential operations
+- Removed graphing feature due to assembly issues (to be added later)
 
 ### Version 1.0.0 (Initial Release)
 - Created basic GUI calculator with Windows Forms
